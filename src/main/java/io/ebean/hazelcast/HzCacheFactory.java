@@ -190,6 +190,12 @@ public final class HzCacheFactory implements ServerCacheFactory {
     }
 
     @Override
+    public void put(Object key, Object value) {
+      super.put(key, value);
+      sendInvalidation(name);
+    }
+
+    @Override
     public void invalidate() {
       super.clear();
     }
