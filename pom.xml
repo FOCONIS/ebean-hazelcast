@@ -13,7 +13,7 @@
   <version>13.2.1-FOC2</version>
 
   <scm>
-    <developerConnection>scm:git:git@github.com:ebean-orm/ebean-hazelcast.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:FOCONIS/ebean-hazelcast.git</developerConnection>
     <tag>ebean-hazelcast-13.2.1-FOC2</tag>
   </scm>
 
