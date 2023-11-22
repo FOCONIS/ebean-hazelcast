@@ -10,11 +10,11 @@
 
   <groupId>io.ebean</groupId>
   <artifactId>ebean-hazelcast</artifactId>
-  <version>13.2.1-FOC3</version>
+  <version>13.2.1-FOC4-SNAPSHOT</version>
 
   <scm>
     <developerConnection>scm:git:git@github.com:FOCONIS/ebean-hazelcast.git</developerConnection>
-    <tag>ebean-hazelcast-13.2.1-FOC3</tag>
+    <tag>ebean-hazelcast-13.2.1-FOC2</tag>
   </scm>
 
   <properties>
