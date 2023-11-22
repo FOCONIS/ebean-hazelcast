@@ -2,11 +2,9 @@ package io.ebean.hazelcast;
 
 import io.ebean.DB;
 import io.ebean.Database;
-import io.ebean.Ebean;
 import io.ebean.cache.ServerCache;
 import io.ebean.cache.ServerCacheManager;
 import io.ebean.cache.TenantAwareCache;
-import io.ebeaninternal.server.cache.DefaultServerQueryCache;
 import org.example.domain.EAddress;
 import org.example.domain.EConfig;
 import org.example.domain.ECustomer;
@@ -156,8 +154,8 @@ public class HzCacheFactoryTest {
     ECustomer foo = new ECustomer("hello");
     foo.save();
 
-    ECustomer fetch1 = Ebean.find(ECustomer.class, foo.getId());
-    ECustomer fetch2 = Ebean.find(ECustomer.class, foo.getId());
+    ECustomer fetch1 = DB.find(ECustomer.class, foo.getId());
+    ECustomer fetch2 = DB.find(ECustomer.class, foo.getId());
 
     assertNotNull(fetch1);
     assertNotNull(fetch2);
